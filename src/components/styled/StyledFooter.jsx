@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
   display: flex;
@@ -13,12 +13,33 @@ export const StyledFooter = styled.footer`
 
   .footerContent {
     padding: 1rem;
-    color: rgba(2, 177, 200, .5);
+    color: rgba(2, 177, 200, 0.5);
     font-weight: 400;
   }
 
   .developed {
     color: rgba(2, 177, 200, 1);
     font-weight: 800;
+    a {
+      color: rgba(2, 177, 200, 1);
+
+      &:hover {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .developed,
+  .credits {
+    a {
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+  .credits {
+    color: rgba(255, 255, 255, 0.2);
+    a {
+      color: rgba(255, 255, 255, 0.2);
+    }
   }
 `;

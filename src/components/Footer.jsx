@@ -6,14 +6,22 @@ export default function Footer() {
     <StyledFooter className="footer">
       <p className="footerContent">
         {" "}
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.{" "}
+        APP created to explain how to use React and a external API to Henry
+        Students.{" "}
       </p>
       <h4 className="footerContent">
-        {" "}
-        {"<>"} by <span className="developed">Julian Ramirez</span> &{" "}
-        <span className="developed">Santiago Molina</span> 2021{" "}
+        {"<>"} by{" "}
+        <span className="developed">
+          <a href="https://www.linkedin.com/in/julignacio/">Julian Ramirez</a>
+        </span>{" "}
+        {" & "}
+        <span className="developed">Santiago Molina </span> 2021
       </h4>
+      <div>
+        <h4 className="credits">
+          Api: <a href="https://rickandmortyapi.com/">Rick and Morty API</a>
+        </h4>
+      </div>
     </StyledFooter>
   );
 }
